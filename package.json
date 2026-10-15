@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "aula-1709",
+=======
+  "name": "formulario-tw",
+>>>>>>> 7379f886a3ae648b6c948449b36400c59a7c242f
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
