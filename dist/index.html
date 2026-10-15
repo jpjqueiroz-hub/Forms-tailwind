@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Travel</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-slate-950 text-white font-body p-8">
+
+    <main class="max-w-7xl min-h-dvh bg-white/5 rounded-3xl p-4 mx-auto
+    border border-white/15">
+
+        <header class="flex flex-col items-center justify-between gap-4 lg:flex-row">
+            <h1 class="font-title text-4xl font-bold leading-tight md:text-5xl">Space Travel</h1>
+            <figure class="flex gap-1">
+                <img src="./images/astro01.jpg" alt="Astronauta 01" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro02.jpg" alt="Astronauta 02" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro03.jpg" alt="Astronauta 03" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro04.jpg" alt="Astronauta 04" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro05.jpg" alt="Astronauta 05" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro06.jpg" alt="Astronauta 06" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro07.jpg" alt="Astronauta 07" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro08.jpg" alt="Astronauta 08" class="size-10 rounded-full border-2 border-cyan-950 object-cover
+            cursor-pointer hover:animate-spin duration-500">
+            </figure>
+        </header>
+
+        <form name="form-viagem" id="form-viagem" method="get" action="">
+            <p class="my-5 font-medium text-cyan-300 text-center
+        text-balance lg:text-left">
+                Preencha os dados abaixo para confirmar sua viagem
+                especial
+            </p>
+
+            <fieldset class="border border-white/10 rounded-2xl
+            bg-white/10 p-4">
+                <legend class="font-title text-lg font-bold
+                text-cyan-300 px-2">01. Dados do viajante</legend>
+
+                <section class="grid gap-6 md:grid-cols-2">
+
+                    <div>
+                        <label for="nome" class=" block ml-2 
+                        text-sm mb-2 text-slate-300">
+                            Nome completo
+                        </label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" minlength="10"
+                            maxlength="20" required class="border border-white/10
+                        bg-slate-950/60 px-2 py-3 outline-none
+                        focus:border-cyan-400 focus:bg-white/10
+                         w-full rounded-lg">
+                    </div>
+
+                    <div>
+                        <label for="codigo" class=" block ml-2 
+                                            text-sm mb-2 text-slate-300">
+                            Código de acesso
+                        </label>
+                        <input type="password" id="codigo" name="codigo" placeholder="Digite seu código" minlength="8"
+                            maxlength="20" required class="border border-white/10
+                                            bg-slate-950/60 px-2 py-3 outline-none
+                                            focus:border-cyan-400 focus:bg-white/10
+                                             w-full rounded-lg">
+                    </div>
+
+                    <div>
+                        <label for="dataViagem" class=" block ml-2 
+                                         text-sm mb-2 text-slate-300">
+                            Data da viagem
+                        </label>
+                        <input type="date" id="dataViagem" name="dataViagem" required class="border border-white/10 bg-slate-950/60 px-2 
+                              py-3 outline-none focus:border-cyan-400 
+                              focus:bg-white/10  w-full rounded-lg">
+                    </div>
+
+                    <div>
+                        <label for="email" class=" block ml-2  text-sm mb-2
+                         text-slate-300">
+                            E-mail
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" maxlength="50"
+                            required class="border border-white/10 bg-slate-950/60 px-2 py-3 outline-none
+                        focus:border-cyan-400 focus:bg-white/10  w-full rounded-lg">
+                    </div>
+                </section>
+            </fieldset>
+
+            <!-- 2a. seção de dados -->
+            <fieldset class="border border-white/10 rounded-2xl
+                        bg-white/10 p-4 my-6">
+                <legend class="font-title text-lg font-bold
+                            text-cyan-300 px-2">02. Detalhes da viagem</legend>
+
+                <section class="grid gap-6 md:grid-cols-2">
+
+                    <div>
+                        <label for="destino" class=" block ml-2 
+                                    text-sm mb-2 text-slate-300">
+                            Destino
+                        </label>
+
+                        <select name="destino" id="destino" class="border border-white/10 bg-slate-950 px-2 py-3 outline-none
+                        focus:border-cyan-400  w-full rounded-lg" required>
+                            <option value="" disabled selected>Selecione um destino</option>
+                            <option value="Lua">Lua</option>
+                            <option value="Marte">Marte</option>
+                            <option value="Titan">Titan</option>
+                            <option value="Europa">Europa</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="nave" class="block ml-2 text-sm mb-2 text-slate-300">
+                            Nave preferida
+                        </label>
+                        <input type="text" id="nave" name="nave" list="listaNaves" required class="border border-white/10 bg-slate-950/60 px-2 
+                              py-3 outline-none focus:border-cyan-400 
+                              focus:bg-white/10  w-full rounded-lg" placeholder="Escolha ou digite uma nave">
+
+                        <datalist id="listaNaves">
+                            <option value="Orion GX"></option>
+                            <option value="Galaxy Explorer"></option>
+                            <option value="Star Voyager"></option>
+                            <option value="Cosmos 3000"></option>
+                            <option value="Zenith 800"></option>
+                            <option value="Open Space"></option>
+                        </datalist>
+                    </div>
+                </section>
+
+                <div>
+                    <p class="text-sm ml-2 mb-2 mt-4 text-slate-300">
+                        Classe da viagem
+                    </p>
+                    <section class="grid md:grid-cols-3 gap-6">
+                        <label class="flex items-center gap-3 border border-white/10
+                        rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                            <input type="radio" name="classeViagem" id="classeViagem1" value="economica" class="size-4">
+                            <span>Econômica</span>
+                        </label>
+
+                        <label class="flex items-center gap-3 border border-white/10
+                                            rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                            <input type="radio" name="classeViagem" id="classeViagem2" value="executiva" class="size-4"
+                                checked>
+                            <span>Executiva</span>
+                        </label>
+
+                        <label class="flex items-center gap-3 border border-white/10
+                                                                rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                            <input type="radio" name="classeViagem" id="classeViagem3" value="luxo"
+                                class="size-4 accent-amber-400" checked>
+                            <span>Luxo</span>
+                        </label>
+
+                    </section>
+                </div>
+
+
+                <div>
+                    <p class="text-sm ml-2 mb-2 mt-4 text-slate-300">
+                        Serviços adicionais
+                    </p>
+                    <section class="grid md:grid-cols-2 gap-6">
+                        <label class="flex items-center gap-3 border border-white/10
+                                        rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                            <input type="checkbox" name="servicos" id="servico1" value="hotel espacial" class="size-4">
+                            <span>Hotel Espacial</span>
+                        </label>
+
+                        <label class="flex items-center gap-3 border border-white/10
+                                                                rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                            <input type="checkbox" name="servicos" id="servico2" value="passeio lunar" class="size-4">
+                            <span>Passeio lunar</span>
+                        </label>
+                        
+                        <label class="flex items-center gap-3 border border-white/10
+                                                                rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                            <input type="checkbox" name="servicos" id="servico3" value="guia espacial" class="size-4" checked>
+                            <span>Guia Espacial</span>
+                        </label>
+
+                        <label class="flex items-center gap-3 border border-white/10
+                                                                rounded-lg bg-slate-950/40 p-4 hover:bg-white/10">
+                            <input type="checkbox" name="servicos" id="servico4" value="seguro interplanetário" class="size-4" checked>
+                            <span>Seguro Interplanetário</span>
+                        </label>
+                    </section>
+                </div>
+            </fieldset>
+            
+            <!-- 03. Seção observações -->
+            <fieldset class="border border-white/10 rounded-2xl bg-white/10 p-4 my-6">
+                <legend class="font-title text-lg font-bold text-cyan-300 px-2">
+                    03. Observações
+                </legend>
+            
+                    <div>
+                        <label for="mensagem" class=" block ml-2 text-sm mb-2 text-slate-300">
+                            Conte-nos sobre sua viajem
+                        </label>
+                        <textarea name="mensagem" id="mensagem" class="border h-30 border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:border-cyan-400  focus:bg-white/10  w-full rounded-lg resize-none " placeholder="Escreva uma mensagem ou alguma informação importante..."></textarea>
+                    </div>
+                        
+                    
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+</html>

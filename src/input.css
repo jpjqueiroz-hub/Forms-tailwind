@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:wght@400;500;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-title: "Orbitron", sans-serif;
+    --font-body: "Poppins", sans-serif;
+
+    --color-rock-50: #e9e6ff;
+    --color-rock-100: #d6d1ff;
+    --color-rock-200: #b9adff;
+    --color-rock-300: #917bff;
+    --color-rock-400: #7648ff;
+    --color-rock-500: #671fff;
+    --color-rock-600: #6600ff;
+    --color-rock-700: #6a00ff;
+    --color-rock-800: #5800da;
+    --color-rock-900: #4406a9;
+    --color-rock-950: #150231;
+
+    --spacing-my-50: 50px;
+}
