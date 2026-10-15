@@ -16,22 +16,14 @@
         <header class="flex flex-col items-center justify-between gap-4 lg:flex-row">
             <h1 class="font-title text-4xl font-bold leading-tight md:text-5xl">Space Travel</h1>
             <figure class="flex gap-1">
-                <img src="./images/astro01.jpg" alt="Astronauta 01" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro02.jpg" alt="Astronauta 02" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro03.jpg" alt="Astronauta 03" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro04.jpg" alt="Astronauta 04" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro05.jpg" alt="Astronauta 05" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro06.jpg" alt="Astronauta 06" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro07.jpg" alt="Astronauta 07" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
-                <img src="./images/astro08.jpg" alt="Astronauta 08" class="size-10 rounded-full border-2 border-cyan-950 object-cover
-            cursor-pointer hover:animate-spin duration-500">
+                <img src="./images/astro01.jpg" alt="Astronauta 01" class="astro">
+                <img src="./images/astro02.jpg" alt="Astronauta 02" class="astro">
+                <img src="./images/astro03.jpg" alt="Astronauta 03" class="astro">
+                <img src="./images/astro04.jpg" alt="Astronauta 04" class="astro">
+                <img src="./images/astro05.jpg" alt="Astronauta 05" class="astro">
+                <img src="./images/astro06.jpg" alt="Astronauta 06" class="astro">
+                <img src="./images/astro07.jpg" alt="Astronauta 07" class="astro">
+                <img src="./images/astro08.jpg" alt="Astronauta 08" class="astro">
             </figure>
         </header>
 
@@ -211,11 +203,19 @@
                         </label>
                         <textarea name="mensagem" id="mensagem" class="border h-30 border-white/10 bg-slate-950/60 px-2 py-3 outline-none focus:border-cyan-400  focus:bg-white/10  w-full rounded-lg resize-none " placeholder="Escreva uma mensagem ou alguma informação importante..."></textarea>
                     </div>
+
+                    <label class="flex items-center gap-2 ">
+                        <input type="checkbox" name="servicos" id="termos" value="termos" class="size-4">
+                        <span class="text-[10px] font-extralight text-white/50 cursor-pointer">Concordo com os termos da viagem espacial e autorizo o prcessamento dos meus dados</span>
+                    </label>
                         
                     
                 </div>
             </fieldset>
-
+            <div class=" my-4">
+            <button type="button" id="btn-confirmar" class="w-full bg-linear-to-r from-cyan-400 to-fuchsia-500 rounded-2xl px-4 py-5 font-semibold text-slate-950 cursor-pointer transition hover:scale-[1.02] duration-700">
+                Confirmar viagem</button>
+            </div>
         </form>
     </main>
 </body>

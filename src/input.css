@@ -20,3 +20,7 @@
 
     --spacing-my-50: 50px;
 }
+
+.astro {
+    @apply size-10 rounded-full border-2 border-cyan-950 object-cover cursor-pointer hover:animate-spin duration-500 
+}
